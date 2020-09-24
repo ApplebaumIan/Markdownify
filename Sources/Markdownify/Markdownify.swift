@@ -9,7 +9,11 @@ struct Markdownify {
 		
 	}
 	func convertHTMLtoMarkdown(_ html: String) -> String? {
+	
+		let md = try Python.import("markdownify")
 		
-		return html 
+		
+	
+		return md.markdownify(html).description
 	}
 }
