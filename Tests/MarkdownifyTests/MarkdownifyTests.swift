@@ -10,7 +10,7 @@ final class MarkdownifyTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(Markdownify().convertHTMLtoMarkdown(
+		XCTAssertEqual(Markdownify.convertHTMLtoMarkdown(
 			"""
 <b>Yay</b> <a href="http://github.com">GitHub</a>
 """
